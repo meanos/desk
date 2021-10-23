@@ -227,7 +227,7 @@ for (var i = 0; i < loadedDrives.length; i++) {
 				$("#propertiesDriveProtocol").parent().removeClass("hidden");
 			}
 
-			if (loadedDrives[i].name == "sd_extern")
+			if (loadedDrives[i].name == "sd_meanOs")
 				$("#propertiesDriveInternalName").parent().addClass("hidden");
 			else {
 				$("#propertiesDriveInternalName").text(loadedDrives[i].name);
@@ -335,7 +335,7 @@ var filesStack = {
 	row: 2,
 	name: "Files",
 	type: "files",
-	location: "/home/extern/Projects/Files"
+	location: "/home/meanOs/Projects/Files"
 }
 
 allStacks.push(driveStack);
@@ -506,7 +506,7 @@ console.log("allStacks",allStacks);
 //stackFileContents[fileslocation]
 }
 
-//setTimeout(function(){ addNewStack("/home/extern/Videos"); }, 20000);
+//setTimeout(function(){ addNewStack("/home/meanOs/Videos"); }, 20000);
 
 
 
@@ -786,7 +786,7 @@ var systemDrive = {
 			label: "meanOs",
 			model: "",
 			mount: "/",
-			name: "sd_extern",
+			name: "sd_meanOs",
 			physical:"HDD",
 			protocol:"usb",
 			removable:false,
@@ -1614,7 +1614,7 @@ function showStackEditor() {
 
 
 
-//const stackLocation = '/home/extern/Projects/Files';
+//const stackLocation = '/home/meanOs/Projects/Files';
 const fs = require('fs');
 var currentStackBeingLoaded = 1;
 
